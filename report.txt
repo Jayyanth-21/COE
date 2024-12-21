@@ -1,0 +1,32 @@
+1)Planning analysis
+2)finance analysis
+3)education analysis
+4)social welfare analysis
+5)Employment analysis
+
+
+1)planning:
+     module-Planning
+     schema-age,gender,marital status
+     usecases-govt schemes,election organization  
+     
+2)Financial:
+     module-financial
+     schema-age,income,	tax filling status
+     usecases-tax reports,IT returns,nonfiler analysis
+
+
+3)Educational:
+     module-education
+     schema-education,age,parent status,gender
+     usecases-literacy percentage,academic improvement,scholarships
+
+4)Social welfare :
+     module-social
+     schema-citizenship,marital status,country,age,gender
+     usecases-pension allotment,child labour abolition,child marriage abolition,migrant analysis,family welfare
+
+5)Employment:
+     module-employment
+     schema-age,gender,education,weeks worked
+     usecases-unemployment status,oppurtinites of females compared to male(gender ratio in employment)
