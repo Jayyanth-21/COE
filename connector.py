@@ -7,9 +7,3 @@ mydb=mc.connect(
     password="root",
     database="db"
 )
-cursor=mydb.cursor()
-name=input("enter the name")
-address=input("enter the address")
-query="insert into customers values(%s,%s)"
-cursor.execute(query,(name,address))
-mydb.commit()
