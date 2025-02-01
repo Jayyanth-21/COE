@@ -1,0 +1,44 @@
+Data Cleaning & Preprocessing Tasks
+1️⃣ Handling Missing Values
+Identify missing values in normalized_losses, bore, stroke, horsepower,
+peak_rpm, price.
+Fill numerical missing values using:
+Mean/Median for horsepower, price.
+Mode for categorical columns (number_of_doors, fuel_type).
+Drop records if too many values are missing.
+
+2️⃣ String & Categorical Data Preprocessing
+Convert categorical data into lowercase and remove special characters (make,
+fuel_type, aspiration, etc.).
+Replace "?" or NaN values with appropriate replacements.
+Standardize number_of_cylinders:
+Convert words ("four", "six", "eight") to integers (4, 6, 8).
+Standardize fuel_system categories (e.g., mpfi, spdi → Multi-Point Fuel Injection,
+Single-Point Fuel Injection).
+
+3️⃣ Numeric Feature Processing
+Convert "horsepower" and "peak_rpm" to integers (handle missing values first).
+Convert price to numeric and fill missing values.
+Standardize units (e.g., convert horsepower to kW if needed).
+
+4️⃣ Feature Engineering on Numeric Columns
+Create New Features:
+Power-to-weight ratio = horsepower / curb_weight.
+Engine efficiency = horsepower / engine_size.
+Fuel efficiency = city_mpg / highway_mpg.
+Convert compression_ratio into categories:
+Low (<9), Medium (9-11), High (>11).
+
+5️⃣ Handling Date or Range Values
+Extract ranges from normalized_losses and create bins (e.g., Low, Medium, High
+loss categories).
+
+6️⃣ Encoding Categorical Features
+Label Encoding for fuel_type, aspiration, drive_wheels, etc.
+One-Hot Encoding for body_style, engine_type, and fuel_system.
+
+7️⃣ Data Scaling & Normalization
+Scale numerical features (length, width, height, curb_weight, engine_size)
+using Min-Max Scaling or Standardization.
+
+
